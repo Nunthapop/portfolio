@@ -1,6 +1,6 @@
 :root {
   --main: #000000;
-  --main-text-color: #fff;
+
   --section: #000000;
 }
 * {
@@ -109,7 +109,7 @@ section.About {
         max-height: 400px;
         margin: 0rem 50rem;
         border-radius: 50%;
-        
+        border: #fff solid 10px;
       
     }
   
@@ -118,10 +118,10 @@ section.About {
 
 @media screen and (max-width: 450px) {
     .grid-2 img {
-        max-width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; 
+        height: auto; 
         
-        /* Add any other styles you need */
+      
     }
 }
 
