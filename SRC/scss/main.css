@@ -200,4 +200,11 @@ section.Projects {
   padding: 0.5rem;
 }
 
+timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=main.css.map */
