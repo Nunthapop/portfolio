@@ -1,4 +1,4 @@
-//Box
+@use 'app.scss' as app;
 .box{
     //   border: solid white;
       display: flex;
@@ -8,13 +8,11 @@
       padding: 1rem;
       border-radius: 20px;
       margin: 1rem;
-    background-color: #0e0f0f;
+      border: app.$font-color solid 1px;
+    // background-color: $box;
     //   transition: 1847ms;
     font-family: "Inter", serif;
-
     font-optical-sizing: auto;
-
- 
       p {
           text-align: center;
           font-weight: 200;
@@ -31,6 +29,20 @@
         margin-bottom: 0.5rem;
         font-weight: 400;
         
+      }
+      .tech-icon{
+        margin-top: 1rem;
+        border: 1px solid app.$font-color;
+        border-radius: 15px;
+        margin-left: -70%;
+        padding: 0.5rem;
+        img{
+         
+         
+          border: 1px solid app.$font-color;
+          width: auto;
+          height: 1.4rem;
+        }
       }
   }
   .box img{
