@@ -1,9 +1,9 @@
-
 $main: #000000;
 $box: #424242;
 $section: #000000;
 $border: #ffffff7a;
-$font-color:#FFF5E3;
+$font-color: #fff5e3;
+$transition: 1847ms;
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: black;
-
+  z-index: 1;
   color: #fff;
   padding: 2rem;
   height: 3rem;
@@ -67,6 +67,23 @@ section.About {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   justify-content: center;
+  a{
+    text-decoration: none;
+  }
+  .ct-github , .ct-ig {
+    margin-top: 2rem;
+    height: 2rem;
+    filter: invert(50%);
+ margin-left: 1rem;
+    transition: $transition;
+    //border: 1px solid red;
+  
+  }
+  .ct-github:hover, .ct-ig:hover { 
+    filter: invert(100%);
+    transition: $transition;
+    height: 3rem;
+  }
   > * {
     display: flex;
     flex-direction: column;
@@ -96,7 +113,6 @@ section.About {
   border: 1px solid $border;
   position: relative;
 
- 
   h1 {
     font-family: "Outfit-black", sans-serif;
     font-weight: 100;
@@ -114,15 +130,13 @@ section.About {
 .grid-2 {
   border: 1px solid $border;
   background-attachment: fixed;
-  
 
   background-position: center;
- background-repeat: space;
+  background-repeat: space;
 
-background-size: 10rem;
- background-image: url("/img/Asset 4.png");
+  background-size: 10rem;
+  background-image: url("/img/Asset 4.png");
   img {
-    
     max-width: 100%;
     height: auto;
     max-height: 400px;
@@ -151,16 +165,15 @@ background-size: 10rem;
   font-size: 14px;
   color: $font-color;
   padding: 10px 30px;
-  transition: 1847ms;
+  transition: $transition;
   width: auto;
   background-color: transparent;
- 
 }
 
 .btn:hover {
-  a{
+  a {
     color: black;
-    transition: 1847ms;
+    transition: $transition;
   }
 
   width: auto;

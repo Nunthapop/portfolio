@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", serif;
-  color: #FFF5E3;
+  color: #fff5e3;
 }
 
 nav {
@@ -12,6 +12,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: black;
+  z-index: 1;
   color: #fff;
   padding: 2rem;
   height: 3rem;
@@ -64,6 +65,21 @@ section.About {
   height: 90vh;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
+}
+section.About a {
+  text-decoration: none;
+}
+section.About .ct-github, section.About .ct-ig {
+  margin-top: 2rem;
+  height: 2rem;
+  filter: invert(50%);
+  margin-left: 1rem;
+  transition: 1847ms;
+}
+section.About .ct-github:hover, section.About .ct-ig:hover {
+  filter: invert(100%);
+  transition: 1847ms;
+  height: 3rem;
 }
 section.About > * {
   display: flex;
@@ -135,10 +151,10 @@ section.About > * {
 .btn {
   margin-top: 3rem;
   cursor: pointer;
-  border: 1px solid #FFF5E3;
+  border: 1px solid #fff5e3;
   font-family: "system-ui";
   font-size: 14px;
-  color: #FFF5E3;
+  color: #fff5e3;
   padding: 10px 30px;
   transition: 1847ms;
   width: auto;
@@ -147,7 +163,7 @@ section.About > * {
 
 .btn:hover {
   width: auto;
-  background: #FFF5E3;
+  background: #fff5e3;
   border-color: rgb(0, 0, 0);
   border-width: 2px;
   border-style: solid;
@@ -171,9 +187,8 @@ section.Projects {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  border-radius: 20px;
   margin: 1rem;
-  border: #FFF5E3 solid 1px;
+  border: #fff5e3 solid 1px;
   font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
@@ -195,11 +210,38 @@ section.Projects {
 }
 .box .tech-icon-ctn {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box .tech-icon-ctn .doc:active {
+  background-color: #fff5e3;
+}
+.box .tech-icon-ctn .doc:active a {
+  color: black;
+}
+.box .tech-icon-ctn .doc:hover {
+  transition: 1847ms;
+  background-color: #fff5e3;
+  transition: 1847ms;
+}
+.box .tech-icon-ctn .doc:hover a {
+  color: black;
+}
+.box .tech-icon-ctn .doc {
+  transition: 1847ms;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  font-size: 1rem;
+  height: fit-content;
+}
+.box .tech-icon-ctn .doc a {
+  text-decoration: none;
 }
 .box .tech-icon {
   margin-top: 1rem;
-  border: 1px solid #FFF5E3;
-  border-radius: 15px;
+  border: 1px solid #fff5e3;
   width: 30%;
   min-width: fit-content;
   max-width: 40%;
@@ -223,8 +265,8 @@ section.Projects {
 }
 
 .footer {
-  border: 1px solid #FFF5E3;
-  border-radius: 20px;
+  border: 1px solid #fff5e3;
+  border-radius: 0;
   margin: 1rem;
   margin-bottom: 3rem;
 }

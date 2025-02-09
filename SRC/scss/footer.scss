@@ -1,7 +1,7 @@
 @use 'app.scss' as app;
 .footer{
     border: 1px solid app.$font-color;
-    border-radius: 20px;
+    border-radius: 0;
     margin: 1rem;
     margin-bottom: 3rem;
     

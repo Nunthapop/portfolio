@@ -1,12 +1,13 @@
 @use 'app.scss' as app;
 .box{
+ 
     //   border: solid white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 1rem;
-      border-radius: 20px;
+      // border-radius: 20px;
       margin: 1rem;
       border: app.$font-color solid 1px;
     // background-color: $box;
@@ -34,11 +35,41 @@
       }
       .tech-icon-ctn{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+        align-items: center;
+        .doc:active{
+          background-color: app.$font-color;
+          a{
+              color: black;
+          }
+         }
+         .doc:hover{
+          transition: app.$transition;
+          background-color: app.$font-color;
+          transition: app.$transition;
+     
+         a{
+          color: black;
+         }
+        }
+        .doc{
+          transition: app.$transition;
+          margin-top: 1rem;
+          padding: 0.5rem;
+          background-color: transparent;
+          font-size: 1rem;
+          height: fit-content;
+          a{
+            text-decoration: none;
+          }                        
+        }
       }
       .tech-icon{
         margin-top: 1rem;
         border: 1px solid app.$font-color;
-        border-radius: 15px;
+      
         width: 30%;
         min-width: fit-content;
         max-width: 40%;
@@ -63,5 +94,7 @@
           width: 100%;
           height: fit-content;
           object-fit: contain;
+          
       
   }
+  
